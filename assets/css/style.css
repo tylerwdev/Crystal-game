@@ -33,6 +33,7 @@ body {
     align-self: stretch;
     padding: 1%;
     display: inline-block;
+    font-size: 70px;
 }
 
 #win-lose {
