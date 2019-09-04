@@ -33,6 +33,7 @@ body {
     align-self: stretch;
     padding: 1%;
     display: inline-block;
+    font-size: 70px;
 }
 
 #win-lose {
@@ -96,7 +97,7 @@ body {
     padding: 1%;
 }
 
-#total-score-num {
+/* #total-score-num {
     background-color: #ffa500;
     width: 8%;
     height: auto;
@@ -104,5 +105,5 @@ body {
     margin-top: 1%;
     align-self: stretch;
     padding: 1%;
-}
+} */
 
