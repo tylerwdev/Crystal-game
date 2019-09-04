@@ -1,16 +1,17 @@
-// var score = []
 var wins = 0
 var losses = 0
 var score = 0
 
 var playerScore = document.getElementById("playerScore");
+var playerWin = document.getElementById("playerWin");
+var playerLose = document.getElementById("playerLose")
 
-//TODO: generate random number between 19-120 for game object
+// generate random number between 19-120 for game object
 
 var targetScore = Math.floor(Math.random()*101)+19
 $('#random').text(targetScore)
 
-//TODO: each crystal needs a value between 1-12 assigned randomly
+// each crystal needs a value between 1-12 assigned randomly
 
 var dataCrystal1 = Math.floor(Math.random()*12)+1
 var redCrystalDiv = $('#red-crystal')
@@ -28,35 +29,86 @@ var dataCrystal4 = Math.floor(Math.random()*12)+1
 var yellowCrystalDiv = $('#yellow-crystal')
 yellowCrystalDiv.attr('crystal-value', dataCrystal4)
 
-//TODO: clicking gems adds specific gem value to player score
+// clicking crystals adds specific crystal value to player score
 
 $('#red-crystal').on('click', function() {
     score += dataCrystal1
 
     playerScore.textContent = " " + score
+
+    if (score===targetScore){
+        wins++
+        document.getElementById('flash-message').innerHTML = 'You Won!'
+    }
+    if (score > targetScore) {
+        losses++
+        document.getElementById('flash-message').innerHTML = 'You lost!'
+    }
+
+    playerWin.textContent = "" + wins
+    playerLose.textContent = "" + losses
 })
 
 $('#blue-crystal').on('click', function() {
     score += dataCrystal2
 
     playerScore.textContent = " " + score
+
+    if (score===targetScore){
+        wins++
+        document.getElementById('flash-message').innerHTML = 'You Won!'
+    }
+    if (score > targetScore) {
+        losses++
+        document.getElementById('flash-message').innerHTML = 'You lost!'
+    }
+
+    playerWin.textContent = "" + wins
+    playerLose.textContent = "" + losses
 })
 
 $('#green-crystal').on('click', function() {
     score += dataCrystal3
 
     playerScore.textContent = " " + score
+
+    if (score===targetScore){
+        wins++
+        document.getElementById('flash-message').innerHTML = 'You Won!'
+    }
+    if (score > targetScore) {
+        losses++
+        document.getElementById('flash-message').innerHTML = 'You lost!'
+    }
+
+    playerWin.textContent = "" + wins
+    playerLose.textContent = "" + losses
 })
 
 $('#yellow-crystal').on('click', function() {
     score += dataCrystal4
 
     playerScore.textContent = " " + score
+
+    if (score===targetScore){
+        wins++
+        document.getElementById('flash-message').innerHTML = 'You Won!'
+    }
+    if (score > targetScore) {
+        losses++
+        document.getElementById('flash-message').innerHTML = 'You lost!'
+    }
+
+    playerWin.textContent = "" + wins
+    playerLose.textContent = "" + losses
 })
 
-//TODO: if player score matches game object, player wins, increasing "win" score
-//TODO: if player score exceeds game object, player loses, increasing "lose" score
-//TODO: On win or lose, both game object and crystal values randomly reset
+//TODO: if player score matches game object, player wins, increasing "win" score, reset game object & crystal values
+
+
+
+//TODO: if player score exceeds game object, player loses, increasing "lose" score, reset game object & crystal values
+
 //TODO: - win or lose, display win or lose message above win/lose score
 
 
