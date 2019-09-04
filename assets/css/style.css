@@ -48,7 +48,7 @@ body {
 }
 
 #red-crystal {
-    background-image: url(../images/Red_Rupee.png);
+    background-image: url(../images/red_rupee.png);
     background-repeat: repeat;
     background-size: cover;
     width: 50px;
@@ -58,7 +58,7 @@ body {
 }
 
 #blue-crystal {
-    background-image: url(../images/blue_Rupee.png);
+    background-image: url(../images/blue_rupee.png);
     background-repeat: repeat;
     background-size: cover;
     width: 50px;
@@ -68,7 +68,7 @@ body {
 }
 
 #green-crystal {
-    background-image: url(../images/green_Rupee.png);
+    background-image: url(../images/green_rupee.png);
     background-repeat: repeat;
     background-size: cover;
     width: 50px;
@@ -78,7 +78,7 @@ body {
 }
 
 #yellow-crystal {
-    background-image: url(../images/yellow_Rupee.png);
+    background-image: url(../images/yellow_rupee.png);
     background-repeat: repeat;
     background-size: cover;
     width: 50px;
