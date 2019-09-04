@@ -1,6 +1,7 @@
-var score = []
+// var score = []
 var wins = 0
 var losses = 0
+var score = 0
 
 var playerScore = document.getElementById("playerScore");
 
@@ -29,27 +30,26 @@ yellowCrystalDiv.attr('crystal-value', dataCrystal4)
 
 //TODO: clicking gems adds specific gem value to player score
 
-
 $('#red-crystal').on('click', function() {
-    score.push(dataCrystal1);
+    score += dataCrystal1
 
     playerScore.textContent = " " + score
 })
 
 $('#blue-crystal').on('click', function() {
-    score.push(dataCrystal2);
+    score += dataCrystal2
 
     playerScore.textContent = " " + score
 })
 
 $('#green-crystal').on('click', function() {
-    score.push(dataCrystal3);
+    score += dataCrystal3
 
     playerScore.textContent = " " + score
 })
 
 $('#yellow-crystal').on('click', function() {
-    score.push(dataCrystal4);
+    score += dataCrystal4
 
     playerScore.textContent = " " + score
 })
